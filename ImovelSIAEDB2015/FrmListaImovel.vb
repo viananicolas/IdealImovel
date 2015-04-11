@@ -18,7 +18,7 @@ Public Class FrmListaImovel
 	End Sub
 
 	Private Sub btnPesquisar_Click(sender As Object, e As EventArgs) Handles btnPesquisar.Click
-
+		Pesquisar(cmbTipoPesquisa.SelectedItem, txtPesquisar.Text, False, Me.Text)
 	End Sub
 
 	Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
@@ -57,7 +57,7 @@ Public Class FrmListaImovel
 				dtgImovel.Refresh()
 				dtgImovel.ClearSelection()
 			End If
-
+		Else
 
 		End If
 	End Sub

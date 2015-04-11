@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="GabrielSIAEDB2015ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GabrielSIAEDB2015ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ImovelSIAEDB2015.My.MySettings.GlobalReference.Default.GabrielSIAEDB2015ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="GabrielSIAEDB2015ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GabrielSIAEDB2015ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ImovelSIAEDB2015.View.My.MySettings.GlobalReference.Default.GabrielSIAEDB2015ConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ImovelTableAdapter" GeneratorDataComponentClassName="ImovelTableAdapter" Name="Imovel" UserDataComponentName="ImovelTableAdapter">
@@ -198,7 +198,7 @@ SELECT id_imovel, Transacao, Tipo, Estado, Cidade, Bairro, Endereco, Numero, Com
   <xs:element name="GabrielSIAEDB2015DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="GabrielSIAEDB2015DataSet1" msprop:Generator_UserDSName="GabrielSIAEDB2015DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Imovel" msprop:Generator_TableClassName="ImovelDataTable" msprop:Generator_TableVarName="tableImovel" msprop:Generator_TablePropName="Imovel" msprop:Generator_RowDeletingName="ImovelRowDeleting" msprop:Generator_RowChangingName="ImovelRowChanging" msprop:Generator_RowEvHandlerName="ImovelRowChangeEventHandler" msprop:Generator_RowDeletedName="ImovelRowDeleted" msprop:Generator_UserTableName="Imovel" msprop:Generator_RowChangedName="ImovelRowChanged" msprop:Generator_RowEvArgName="ImovelRowChangeEvent" msprop:Generator_RowClassName="ImovelRow">
+        <xs:element name="Imovel" msprop:Generator_TableClassName="ImovelDataTable" msprop:Generator_TableVarName="tableImovel" msprop:Generator_RowChangedName="ImovelRowChanged" msprop:Generator_TablePropName="Imovel" msprop:Generator_RowDeletingName="ImovelRowDeleting" msprop:Generator_RowChangingName="ImovelRowChanging" msprop:Generator_RowEvHandlerName="ImovelRowChangeEventHandler" msprop:Generator_RowDeletedName="ImovelRowDeleted" msprop:Generator_RowClassName="ImovelRow" msprop:Generator_UserTableName="Imovel" msprop:Generator_RowEvArgName="ImovelRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id_imovel" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid_imovel" msprop:Generator_ColumnPropNameInRow="id_imovel" msprop:Generator_ColumnPropNameInTable="id_imovelColumn" msprop:Generator_UserColumnName="id_imovel" type="xs:int" />

@@ -29,11 +29,7 @@ Public Class FrmListaContratosAluguel
 	End Sub
 
 	Private Sub btnPesquisar_Click(sender As Object, e As EventArgs) Handles btnPesquisar.Click
-		'Proprietário
-		'Tipo
-		'Subtipo
-		'Cidade
-		'Situação
+
 		Dim a As New ContratoAluguel
 		If txtPesquisar.Text <> "" And cmbTipoPesquisa.SelectedItem = "Proprietário" Then
 			dtgContratosAluguel.ClearSelection()
@@ -42,6 +38,7 @@ Public Class FrmListaContratosAluguel
 				If a.proprietario = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
+				ReCarregarGrid()
 			Next
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
@@ -53,6 +50,7 @@ Public Class FrmListaContratosAluguel
 				If a.tipo_imovel = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
+				ReCarregarGrid()
 			Next
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
@@ -64,6 +62,7 @@ Public Class FrmListaContratosAluguel
 				If a.situacao = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
+				ReCarregarGrid()
 			Next
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)

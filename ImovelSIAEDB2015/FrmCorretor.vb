@@ -5,6 +5,7 @@ Public Class FrmCorretor
 	Dim teste As Boolean = False
 	Dim oCorretor As New Corretor
 	Dim inserir As Boolean = True
+	Dim templist As New List(Of Corretor)
 	Public Shared Windowz As String
 	Private Sub FrmCorretor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 		CarregaGrid()
@@ -133,5 +134,55 @@ Public Class FrmCorretor
 
 	Private Sub dtgCorretor_CellMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dtgCorretor.CellMouseDoubleClick
 		SelecionaCorretor()
+	End Sub
+
+	Private Sub btnPesquisar_Click(sender As Object, e As EventArgs) Handles btnPesquisar.Click
+		'ID
+		'Nome
+		'Cidade
+		Dim a As New Corretor
+		If txtPesquisar.Text <> "" And cmbTipoPesquisa.SelectedItem = "ID" Then
+			dtgCorretor.ClearSelection()
+			For index = 0 To dtgCorretor.Rows.Count - 1
+				a = dtgCorretor.Rows(index).DataBoundItem
+				If a.id_corretor = txtPesquisar.Text Then
+					templist.Add(a)
+				End If
+				ReCarregarGrid()
+			Next
+			If templist.Count = 0 Then
+				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+			End If
+		ElseIf txtPesquisar.Text <> "" And cmbTipoPesquisa.SelectedItem = "Nome" Then
+			dtgCorretor.ClearSelection()
+			For index = 0 To dtgCorretor.Rows.Count - 1
+				a = dtgCorretor.Rows(index).DataBoundItem
+				If a.nome = txtPesquisar.Text Then
+					templist.Add(a)
+				End If
+				ReCarregarGrid()
+			Next
+			If templist.Count = 0 Then
+				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+			End If
+		ElseIf txtPesquisar.Text <> "" And cmbTipoPesquisa.SelectedItem = "Cidade" Then
+			dtgCorretor.ClearSelection()
+			For index = 0 To dtgCorretor.Rows.Count - 1
+				a = dtgCorretor.Rows(index).DataBoundItem
+				If a.cidade = txtPesquisar.Text Then
+					templist.Add(a)
+				End If
+				ReCarregarGrid()
+			Next
+			If templist.Count = 0 Then
+				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+			End If
+		End If
+	End Sub
+
+	Private Sub ReCarregarGrid()
+		dtgCorretor.AutoGenerateColumns = False
+		dtgCorretor.DataSource = templist
+		dtgCorretor.Refresh()
 	End Sub
 End Class

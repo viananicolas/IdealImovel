@@ -57,6 +57,7 @@ Partial Class FrmCorretor
 		Me.btnPesquisar = New System.Windows.Forms.Button()
 		Me.cmbEstado = New System.Windows.Forms.ComboBox()
 		Me.btnEditar = New System.Windows.Forms.Button()
+		Me.cmbTipoPesquisa = New System.Windows.Forms.ComboBox()
 		CType(Me.dtgCorretor, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
@@ -336,11 +337,22 @@ Partial Class FrmCorretor
 		Me.btnEditar.Text = "Editar"
 		Me.btnEditar.UseVisualStyleBackColor = True
 		'
+		'cmbTipoPesquisa
+		'
+		Me.cmbTipoPesquisa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+		Me.cmbTipoPesquisa.FormattingEnabled = True
+		Me.cmbTipoPesquisa.Items.AddRange(New Object() {"ID", "Nome", "Cidade"})
+		Me.cmbTipoPesquisa.Location = New System.Drawing.Point(425, 104)
+		Me.cmbTipoPesquisa.Name = "cmbTipoPesquisa"
+		Me.cmbTipoPesquisa.Size = New System.Drawing.Size(121, 21)
+		Me.cmbTipoPesquisa.TabIndex = 41
+		'
 		'FrmCorretor
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.ClientSize = New System.Drawing.Size(745, 382)
+		Me.Controls.Add(Me.cmbTipoPesquisa)
 		Me.Controls.Add(Me.btnEditar)
 		Me.Controls.Add(Me.cmbEstado)
 		Me.Controls.Add(Me.btnPesquisar)
@@ -410,4 +422,5 @@ Partial Class FrmCorretor
 	Friend WithEvents btnPesquisar As Button
 	Friend WithEvents cmbEstado As ComboBox
 	Friend WithEvents btnEditar As Button
+	Friend WithEvents cmbTipoPesquisa As ComboBox
 End Class
