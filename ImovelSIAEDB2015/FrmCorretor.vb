@@ -148,8 +148,9 @@ Public Class FrmCorretor
 				If a.id_corretor = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
-				ReCarregarGrid()
+
 			Next
+			ReCarregarGrid()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 			End If
@@ -160,8 +161,9 @@ Public Class FrmCorretor
 				If a.nome = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
-				ReCarregarGrid()
+
 			Next
+			ReCarregarGrid()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 			End If
@@ -172,8 +174,9 @@ Public Class FrmCorretor
 				If a.cidade = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
-				ReCarregarGrid()
+
 			Next
+			ReCarregarGrid()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 			End If

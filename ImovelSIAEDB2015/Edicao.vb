@@ -5,7 +5,7 @@ Module Edicao
 	Public achou As Boolean
 	Public Sub Editar(ByVal oCliente As Cliente)
 		Dim frfmcliente As New FrmCliente
-		frfmcliente.Editing(oCliente)
+		frfmcliente.Editing(oCliente) 'envia os valores para os campos
 		frfmcliente.Show()
 	End Sub
 
@@ -22,7 +22,8 @@ Module Edicao
 
 	Public Sub SelecionaProprietario(ByVal Procura As String, ByVal Window As String)
 		Dim frmlistacliente As New FrmListaCliente
-		frmlistacliente.Pesquisar("Tipo", Procura, True, Window)
+		frmlistacliente.Pesquisar("Tipo", Procura, True, Window) 'Pesquisa na lista de clientes todos aqueles que caem no critério
+		'na variavel Procura
 		frmlistacliente.Show()
 	End Sub
 	Public Sub SelecionaImovel(ByVal Procura As String, ByVal Window As String)
@@ -31,7 +32,7 @@ Module Edicao
 		frmimovel.Show()
 	End Sub
 	Public Sub Proprietario(ByVal ProprietarioSelecionado As Tuple(Of Integer, String), ByVal Window As String)
-		If Window = "FrmImovel" Then
+		If Window = "FrmImovel" Then 'Verifica de qual formulário a pesquisa foi realizada e envia o valor para a mesma
 			Dim fdfs As FrmImovel = Application.OpenForms("FrmImovel")
 			fdfs.txtProprietario.Text = ProprietarioSelecionado.Item2
 			fdfs.id_cliente = ProprietarioSelecionado.Item1

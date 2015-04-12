@@ -7,15 +7,15 @@ Public Class FrmCliente
 	Dim oCliente As New Cliente
 	Dim tempID As Integer
 	Private Sub btnSalvar_Click(sender As Object, e As EventArgs) Handles btnSalvar.Click
-		If ValidaCampos() Then
+		If ValidaCampos() Then 'Verifica se os campos estão preenchidos'
 			If rdoFisica.Checked = True Then
 				Dim CPFValidate As String = txtCPF.Text
 				oCliente.tipopessoa = "Física"
-				CPFExiste = CCliente.ValidaCPF(CPFValidate)
+				CPFExiste = CCliente.ValidaCPF(CPFValidate)	'Verifica se o CPF já existe
 			ElseIf rdoJuridica.Checked = True Then
 				oCliente.tipopessoa = "Jurídica"
 				Dim CNPJValidade As String = txtCPF.Text
-				CPFExiste = CCliente.ValidaCNPJ(CNPJValidade)
+				CPFExiste = CCliente.ValidaCNPJ(CNPJValidade) 'Verifica se o CNPJ já existe
 			End If
 			oCliente.Id_cliente = tempID
 			oCliente.bairro = txtBairro.Text.Trim
@@ -43,11 +43,11 @@ Public Class FrmCliente
 					If CPFExiste Then
 						MessageBox.Show("O CPF já consta armazenado no sistema", "Aviso de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1)
 					Else
-						CCliente.InserirCliente(oCliente)
+						CCliente.InserirCliente(oCliente) 'Insere o cliente
 						MessageBox.Show("Cliente inserido com sucesso", "Aviso de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 					End If
 				Else
-					CCliente.AlterarCliente(oCliente)
+					CCliente.AlterarCliente(oCliente) 'Altera o cliente
 					MessageBox.Show("Cliente alterado com sucesso", "Aviso de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 				End If
 

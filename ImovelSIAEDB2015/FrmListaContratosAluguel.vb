@@ -38,8 +38,9 @@ Public Class FrmListaContratosAluguel
 				If a.proprietario = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
-				ReCarregarGrid()
+
 			Next
+			ReCarregarGrid()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 			End If
@@ -50,8 +51,9 @@ Public Class FrmListaContratosAluguel
 				If a.tipo_imovel = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
-				ReCarregarGrid()
+
 			Next
+			ReCarregarGrid()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 			End If
@@ -62,8 +64,9 @@ Public Class FrmListaContratosAluguel
 				If a.situacao = txtPesquisar.Text Then
 					templist.Add(a)
 				End If
-				ReCarregarGrid()
+
 			Next
+			ReCarregarGrid()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 			End If

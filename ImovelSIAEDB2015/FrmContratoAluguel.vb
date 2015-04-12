@@ -113,7 +113,8 @@ Public Class FrmContratoAluguel
 	End Function
 
 	Private Sub btnPesquisar1_Click(sender As Object, e As EventArgs) Handles btnPesquisar1.Click
-		Edicao.SelecionaProprietario("Fiador", "FrmContratoAluguelFiador1")
+		Edicao.SelecionaProprietario("Fiador", "FrmContratoAluguelFiador1")	'Inicia o médoto SelecionaProprietario, mandando o que tem que ser
+		'procurado e qual botão ativou o método
 	End Sub
 
 	Private Sub btnPesquisar2_Click(sender As Object, e As EventArgs) Handles btnPesquisar2.Click
@@ -179,7 +180,6 @@ Public Class FrmContratoAluguel
 		End If
 	End Sub
 	Public Sub Editing(ByVal oContratoAluguel As ContratoAluguel)
-		'CONTINUAR DAQUI
 		txtCPFTestemunha1.Text = oContratoAluguel.cpftestemunha1
 		oContratoAluguel.cpftestemunha2 = txtCPFTestemunha2.Text.Trim
 		oContratoAluguel.datacontrato = dtpDataContrato.Value

@@ -1,5 +1,8 @@
 ﻿Imports System.Runtime.CompilerServices
 
+'Este é um Método de Extensão, que adiciona uma funcionalidade a mais em tipos de dados já existentes na linguagem.
+'Nos casos abaixo, ele realiza uma verificação para saber se o atributo que vem da tabela no DB está preenchido ou se é do tipo DBNull.
+'Se for, ele retorna um nulo normal para o atributo do objeto que está recebendo esse valor. Senão, ele retorna o valor encontrado mesmo.
 Module DataReaderExtensions
 	<Extension()>
 	Public Function GetStringOrNull(ByVal reader As IDataReader, ByVal ordinal As Integer) As String
@@ -38,11 +41,11 @@ Module DataReaderExtensions
 			Return reader.GetByte(ordinal)
 		End If
 	End Function
-	<Extension()>
-	Public Function GetByteOrNull(ByVal reader As IDataReader, ByVal columnname As String) As Byte
+	'<Extension()>
+	'Public Function GetByteOrNull(ByVal reader As IDataReader, ByVal columnname As String) As Byte
 
-		Return reader.GetByteOrNull(reader.GetOrdinal(columnname))
-	End Function
+	'	Return reader.GetByteOrNull(reader.GetOrdinal(columnname))
+	'End Function
 
 
 End Module

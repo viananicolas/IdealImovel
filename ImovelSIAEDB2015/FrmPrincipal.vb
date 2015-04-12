@@ -10,6 +10,8 @@
 	Private Sub ClientesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
 		Dim frmlistacliente As New FrmListaCliente
 		frmlistacliente.MdiParent = Me
+		'frmlistacliente.Modo() =  Informa se o formulário será aberto para uma visualização normal da lista de clientes
+		'ou se é para escolher um na hora de criar um contrato ou imóvel
 		frmlistacliente.Modo()
 		frmlistacliente.WindowState = FormWindowState.Maximized
 		frmlistacliente.Show()

@@ -108,12 +108,12 @@ Partial Class FrmContratoVenda
 		'GroupBox5
 		'
 		Me.GroupBox5.Controls.Add(Me.txtOutrasDespesas)
-		Me.GroupBox5.Location = New System.Drawing.Point(287, 329)
+		Me.GroupBox5.Location = New System.Drawing.Point(299, 338)
 		Me.GroupBox5.Name = "GroupBox5"
 		Me.GroupBox5.Size = New System.Drawing.Size(114, 54)
 		Me.GroupBox5.TabIndex = 32
 		Me.GroupBox5.TabStop = False
-		Me.GroupBox5.Text = "Outras despesas"
+		Me.GroupBox5.Text = "Outras despesas *"
 		'
 		'txtOutrasDespesas
 		'
@@ -153,14 +153,14 @@ Partial Class FrmContratoVenda
 		Me.GroupBox4.Controls.Add(Me.Label22)
 		Me.GroupBox4.Location = New System.Drawing.Point(6, 329)
 		Me.GroupBox4.Name = "GroupBox4"
-		Me.GroupBox4.Size = New System.Drawing.Size(275, 104)
+		Me.GroupBox4.Size = New System.Drawing.Size(279, 104)
 		Me.GroupBox4.TabIndex = 27
 		Me.GroupBox4.TabStop = False
 		Me.GroupBox4.Text = "Envolvidos"
 		'
 		'btnImovel
 		'
-		Me.btnImovel.Location = New System.Drawing.Point(182, 66)
+		Me.btnImovel.Location = New System.Drawing.Point(192, 66)
 		Me.btnImovel.Name = "btnImovel"
 		Me.btnImovel.Size = New System.Drawing.Size(75, 23)
 		Me.btnImovel.TabIndex = 38
@@ -169,7 +169,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtImovel
 		'
-		Me.txtImovel.Location = New System.Drawing.Point(76, 69)
+		Me.txtImovel.Location = New System.Drawing.Point(86, 69)
 		Me.txtImovel.Name = "txtImovel"
 		Me.txtImovel.ReadOnly = True
 		Me.txtImovel.Size = New System.Drawing.Size(100, 20)
@@ -178,15 +178,15 @@ Partial Class FrmContratoVenda
 		'Label24
 		'
 		Me.Label24.AutoSize = True
-		Me.Label24.Location = New System.Drawing.Point(10, 72)
+		Me.Label24.Location = New System.Drawing.Point(32, 72)
 		Me.Label24.Name = "Label24"
-		Me.Label24.Size = New System.Drawing.Size(38, 13)
+		Me.Label24.Size = New System.Drawing.Size(48, 13)
 		Me.Label24.TabIndex = 34
-		Me.Label24.Text = "Imovel"
+		Me.Label24.Text = "Imovel: *"
 		'
 		'btnComprador
 		'
-		Me.btnComprador.Location = New System.Drawing.Point(182, 41)
+		Me.btnComprador.Location = New System.Drawing.Point(192, 41)
 		Me.btnComprador.Name = "btnComprador"
 		Me.btnComprador.Size = New System.Drawing.Size(75, 23)
 		Me.btnComprador.TabIndex = 33
@@ -195,7 +195,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtComprador
 		'
-		Me.txtComprador.Location = New System.Drawing.Point(76, 43)
+		Me.txtComprador.Location = New System.Drawing.Point(86, 43)
 		Me.txtComprador.Name = "txtComprador"
 		Me.txtComprador.ReadOnly = True
 		Me.txtComprador.Size = New System.Drawing.Size(100, 20)
@@ -206,13 +206,13 @@ Partial Class FrmContratoVenda
 		Me.Label23.AutoSize = True
 		Me.Label23.Location = New System.Drawing.Point(10, 51)
 		Me.Label23.Name = "Label23"
-		Me.Label23.Size = New System.Drawing.Size(58, 13)
+		Me.Label23.Size = New System.Drawing.Size(68, 13)
 		Me.Label23.TabIndex = 31
-		Me.Label23.Text = "Comprador"
+		Me.Label23.Text = "Comprador: *"
 		'
 		'btnPesquisarProprietario
 		'
-		Me.btnPesquisarProprietario.Location = New System.Drawing.Point(182, 17)
+		Me.btnPesquisarProprietario.Location = New System.Drawing.Point(192, 17)
 		Me.btnPesquisarProprietario.Name = "btnPesquisarProprietario"
 		Me.btnPesquisarProprietario.Size = New System.Drawing.Size(75, 23)
 		Me.btnPesquisarProprietario.TabIndex = 30
@@ -221,7 +221,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtProprietario
 		'
-		Me.txtProprietario.Location = New System.Drawing.Point(76, 19)
+		Me.txtProprietario.Location = New System.Drawing.Point(86, 19)
 		Me.txtProprietario.Name = "txtProprietario"
 		Me.txtProprietario.ReadOnly = True
 		Me.txtProprietario.Size = New System.Drawing.Size(100, 20)
@@ -232,9 +232,9 @@ Partial Class FrmContratoVenda
 		Me.Label22.AutoSize = True
 		Me.Label22.Location = New System.Drawing.Point(10, 26)
 		Me.Label22.Name = "Label22"
-		Me.Label22.Size = New System.Drawing.Size(60, 13)
+		Me.Label22.Size = New System.Drawing.Size(70, 13)
 		Me.Label22.TabIndex = 28
-		Me.Label22.Text = "Proprietário"
+		Me.Label22.Text = "Proprietário: *"
 		'
 		'GroupBox3
 		'
@@ -270,14 +270,14 @@ Partial Class FrmContratoVenda
 		Me.GroupBox3.Controls.Add(Me.Label12)
 		Me.GroupBox3.Location = New System.Drawing.Point(6, 174)
 		Me.GroupBox3.Name = "GroupBox3"
-		Me.GroupBox3.Size = New System.Drawing.Size(586, 149)
+		Me.GroupBox3.Size = New System.Drawing.Size(557, 149)
 		Me.GroupBox3.TabIndex = 26
 		Me.GroupBox3.TabStop = False
 		Me.GroupBox3.Text = "Valores"
 		'
 		'txtReajusteDias
 		'
-		Me.txtReajusteDias.Location = New System.Drawing.Point(473, 126)
+		Me.txtReajusteDias.Location = New System.Drawing.Point(507, 120)
 		Me.txtReajusteDias.Name = "txtReajusteDias"
 		Me.txtReajusteDias.Size = New System.Drawing.Size(38, 20)
 		Me.txtReajusteDias.TabIndex = 44
@@ -285,15 +285,15 @@ Partial Class FrmContratoVenda
 		'Label31
 		'
 		Me.Label31.AutoSize = True
-		Me.Label31.Location = New System.Drawing.Point(374, 128)
+		Me.Label31.Location = New System.Drawing.Point(420, 120)
 		Me.Label31.Name = "Label31"
-		Me.Label31.Size = New System.Drawing.Size(71, 13)
+		Me.Label31.Size = New System.Drawing.Size(81, 13)
 		Me.Label31.TabIndex = 43
-		Me.Label31.Text = "Reajuste dias"
+		Me.Label31.Text = "Reajuste dias: *"
 		'
 		'txtParcelamentoMeses
 		'
-		Me.txtParcelamentoMeses.Location = New System.Drawing.Point(473, 102)
+		Me.txtParcelamentoMeses.Location = New System.Drawing.Point(507, 94)
 		Me.txtParcelamentoMeses.Name = "txtParcelamentoMeses"
 		Me.txtParcelamentoMeses.Size = New System.Drawing.Size(38, 20)
 		Me.txtParcelamentoMeses.TabIndex = 42
@@ -301,15 +301,15 @@ Partial Class FrmContratoVenda
 		'Label30
 		'
 		Me.Label30.AutoSize = True
-		Me.Label30.Location = New System.Drawing.Point(367, 105)
+		Me.Label30.Location = New System.Drawing.Point(386, 97)
 		Me.Label30.Name = "Label30"
-		Me.Label30.Size = New System.Drawing.Size(105, 13)
+		Me.Label30.Size = New System.Drawing.Size(115, 13)
 		Me.Label30.TabIndex = 41
-		Me.Label30.Text = "Parcelamento meses"
+		Me.Label30.Text = "Parcelamento meses: *"
 		'
 		'txtpagamentotododia
 		'
-		Me.txtpagamentotododia.Location = New System.Drawing.Point(473, 71)
+		Me.txtpagamentotododia.Location = New System.Drawing.Point(507, 68)
 		Me.txtpagamentotododia.Name = "txtpagamentotododia"
 		Me.txtpagamentotododia.Size = New System.Drawing.Size(38, 20)
 		Me.txtpagamentotododia.TabIndex = 40
@@ -317,15 +317,15 @@ Partial Class FrmContratoVenda
 		'Label27
 		'
 		Me.Label27.AutoSize = True
-		Me.Label27.Location = New System.Drawing.Point(370, 78)
+		Me.Label27.Location = New System.Drawing.Point(389, 75)
 		Me.Label27.Name = "Label27"
-		Me.Label27.Size = New System.Drawing.Size(102, 13)
+		Me.Label27.Size = New System.Drawing.Size(112, 13)
 		Me.Label27.TabIndex = 39
-		Me.Label27.Text = "Pagamento todo dia"
+		Me.Label27.Text = "Pagamento todo dia: *"
 		'
 		'txtTaxaJuros
 		'
-		Me.txtTaxaJuros.Location = New System.Drawing.Point(473, 48)
+		Me.txtTaxaJuros.Location = New System.Drawing.Point(507, 46)
 		Me.txtTaxaJuros.Name = "txtTaxaJuros"
 		Me.txtTaxaJuros.Size = New System.Drawing.Size(38, 20)
 		Me.txtTaxaJuros.TabIndex = 38
@@ -333,18 +333,18 @@ Partial Class FrmContratoVenda
 		'Label9
 		'
 		Me.Label9.AutoSize = True
-		Me.Label9.Location = New System.Drawing.Point(396, 51)
+		Me.Label9.Location = New System.Drawing.Point(420, 49)
 		Me.Label9.Name = "Label9"
-		Me.Label9.Size = New System.Drawing.Size(71, 13)
+		Me.Label9.Size = New System.Drawing.Size(81, 13)
 		Me.Label9.TabIndex = 37
-		Me.Label9.Text = "Taxa de juros"
+		Me.Label9.Text = "Taxa de juros: *"
 		'
 		'cmbReajuste
 		'
 		Me.cmbReajuste.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 		Me.cmbReajuste.FormattingEnabled = True
 		Me.cmbReajuste.Items.AddRange(New Object() {"IGPM/FGV", "IGP/FGV", "IPC/FIPE", "INPC/IBGE"})
-		Me.cmbReajuste.Location = New System.Drawing.Point(267, 49)
+		Me.cmbReajuste.Location = New System.Drawing.Point(287, 46)
 		Me.cmbReajuste.Name = "cmbReajuste"
 		Me.cmbReajuste.Size = New System.Drawing.Size(88, 21)
 		Me.cmbReajuste.TabIndex = 36
@@ -354,13 +354,13 @@ Partial Class FrmContratoVenda
 		Me.Label4.AutoSize = True
 		Me.Label4.Location = New System.Drawing.Point(191, 52)
 		Me.Label4.Name = "Label4"
-		Me.Label4.Size = New System.Drawing.Size(76, 13)
+		Me.Label4.Size = New System.Drawing.Size(86, 13)
 		Me.Label4.TabIndex = 35
-		Me.Label4.Text = "Indice reajuste"
+		Me.Label4.Text = "Indice reajuste: *"
 		'
 		'txtJurosMora
 		'
-		Me.txtJurosMora.Location = New System.Drawing.Point(79, 123)
+		Me.txtJurosMora.Location = New System.Drawing.Point(91, 124)
 		Me.txtJurosMora.Name = "txtJurosMora"
 		Me.txtJurosMora.Size = New System.Drawing.Size(100, 20)
 		Me.txtJurosMora.TabIndex = 34
@@ -368,16 +368,16 @@ Partial Class FrmContratoVenda
 		'Label2
 		'
 		Me.Label2.AutoSize = True
-		Me.Label2.Location = New System.Drawing.Point(4, 130)
+		Me.Label2.Location = New System.Drawing.Point(17, 126)
 		Me.Label2.Name = "Label2"
-		Me.Label2.Size = New System.Drawing.Size(58, 13)
+		Me.Label2.Size = New System.Drawing.Size(68, 13)
 		Me.Label2.TabIndex = 33
-		Me.Label2.Text = "Juros mora"
+		Me.Label2.Text = "Juros mora: *"
 		'
 		'Label28
 		'
 		Me.Label28.AutoSize = True
-		Me.Label28.Location = New System.Drawing.Point(252, 100)
+		Me.Label28.Location = New System.Drawing.Point(280, 100)
 		Me.Label28.Name = "Label28"
 		Me.Label28.Size = New System.Drawing.Size(28, 13)
 		Me.Label28.TabIndex = 32
@@ -386,7 +386,7 @@ Partial Class FrmContratoVenda
 		'Label29
 		'
 		Me.Label29.AutoSize = True
-		Me.Label29.Location = New System.Drawing.Point(252, 126)
+		Me.Label29.Location = New System.Drawing.Point(280, 126)
 		Me.Label29.Name = "Label29"
 		Me.Label29.Size = New System.Drawing.Size(28, 13)
 		Me.Label29.TabIndex = 31
@@ -394,7 +394,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtTaxaAdministrativa
 		'
-		Me.txtTaxaAdministrativa.Location = New System.Drawing.Point(473, 23)
+		Me.txtTaxaAdministrativa.Location = New System.Drawing.Point(507, 20)
 		Me.txtTaxaAdministrativa.Name = "txtTaxaAdministrativa"
 		Me.txtTaxaAdministrativa.Size = New System.Drawing.Size(38, 20)
 		Me.txtTaxaAdministrativa.TabIndex = 29
@@ -402,15 +402,15 @@ Partial Class FrmContratoVenda
 		'Label26
 		'
 		Me.Label26.AutoSize = True
-		Me.Label26.Location = New System.Drawing.Point(374, 25)
+		Me.Label26.Location = New System.Drawing.Point(393, 22)
 		Me.Label26.Name = "Label26"
-		Me.Label26.Size = New System.Drawing.Size(98, 13)
+		Me.Label26.Size = New System.Drawing.Size(108, 13)
 		Me.Label26.TabIndex = 28
-		Me.Label26.Text = "Taxa administrativa"
+		Me.Label26.Text = "Taxa administrativa: *"
 		'
 		'txtMultaAtraso
 		'
-		Me.txtMultaAtraso.Location = New System.Drawing.Point(79, 97)
+		Me.txtMultaAtraso.Location = New System.Drawing.Point(91, 97)
 		Me.txtMultaAtraso.Name = "txtMultaAtraso"
 		Me.txtMultaAtraso.Size = New System.Drawing.Size(100, 20)
 		Me.txtMultaAtraso.TabIndex = 21
@@ -418,15 +418,15 @@ Partial Class FrmContratoVenda
 		'Label19
 		'
 		Me.Label19.AutoSize = True
-		Me.Label19.Location = New System.Drawing.Point(4, 104)
+		Me.Label19.Location = New System.Drawing.Point(12, 104)
 		Me.Label19.Name = "Label19"
-		Me.Label19.Size = New System.Drawing.Size(65, 13)
+		Me.Label19.Size = New System.Drawing.Size(75, 13)
 		Me.Label19.TabIndex = 20
-		Me.Label19.Text = "Multa atraso"
+		Me.Label19.Text = "Multa atraso: *"
 		'
 		'txtMultaAtrasoDias
 		'
-		Me.txtMultaAtrasoDias.Location = New System.Drawing.Point(219, 97)
+		Me.txtMultaAtrasoDias.Location = New System.Drawing.Point(247, 97)
 		Me.txtMultaAtrasoDias.Name = "txtMultaAtrasoDias"
 		Me.txtMultaAtrasoDias.Size = New System.Drawing.Size(30, 20)
 		Me.txtMultaAtrasoDias.TabIndex = 19
@@ -434,15 +434,15 @@ Partial Class FrmContratoVenda
 		'Label16
 		'
 		Me.Label16.AutoSize = True
-		Me.Label16.Location = New System.Drawing.Point(182, 100)
+		Me.Label16.Location = New System.Drawing.Point(200, 101)
 		Me.Label16.Name = "Label16"
-		Me.Label16.Size = New System.Drawing.Size(31, 13)
+		Me.Label16.Size = New System.Drawing.Size(41, 13)
 		Me.Label16.TabIndex = 18
-		Me.Label16.Text = "Após"
+		Me.Label16.Text = "Após: *"
 		'
 		'txtValorEntrada
 		'
-		Me.txtValorEntrada.Location = New System.Drawing.Point(79, 71)
+		Me.txtValorEntrada.Location = New System.Drawing.Point(91, 72)
 		Me.txtValorEntrada.Name = "txtValorEntrada"
 		Me.txtValorEntrada.Size = New System.Drawing.Size(100, 20)
 		Me.txtValorEntrada.TabIndex = 17
@@ -452,13 +452,13 @@ Partial Class FrmContratoVenda
 		Me.Label17.AutoSize = True
 		Me.Label17.Location = New System.Drawing.Point(4, 78)
 		Me.Label17.Name = "Label17"
-		Me.Label17.Size = New System.Drawing.Size(71, 13)
+		Me.Label17.Size = New System.Drawing.Size(81, 13)
 		Me.Label17.TabIndex = 16
-		Me.Label17.Text = "Valor Entrada"
+		Me.Label17.Text = "Valor Entrada: *"
 		'
 		'txtDiasJurosMora
 		'
-		Me.txtDiasJurosMora.Location = New System.Drawing.Point(219, 123)
+		Me.txtDiasJurosMora.Location = New System.Drawing.Point(247, 123)
 		Me.txtDiasJurosMora.Name = "txtDiasJurosMora"
 		Me.txtDiasJurosMora.Size = New System.Drawing.Size(30, 20)
 		Me.txtDiasJurosMora.TabIndex = 15
@@ -466,15 +466,15 @@ Partial Class FrmContratoVenda
 		'Label14
 		'
 		Me.Label14.AutoSize = True
-		Me.Label14.Location = New System.Drawing.Point(182, 126)
+		Me.Label14.Location = New System.Drawing.Point(200, 127)
 		Me.Label14.Name = "Label14"
-		Me.Label14.Size = New System.Drawing.Size(31, 13)
+		Me.Label14.Size = New System.Drawing.Size(41, 13)
 		Me.Label14.TabIndex = 14
-		Me.Label14.Text = "Após"
+		Me.Label14.Text = "Após: *"
 		'
 		'txtValorVenda
 		'
-		Me.txtValorVenda.Location = New System.Drawing.Point(79, 48)
+		Me.txtValorVenda.Location = New System.Drawing.Point(91, 48)
 		Me.txtValorVenda.Name = "txtValorVenda"
 		Me.txtValorVenda.Size = New System.Drawing.Size(100, 20)
 		Me.txtValorVenda.TabIndex = 13
@@ -482,15 +482,15 @@ Partial Class FrmContratoVenda
 		'Label15
 		'
 		Me.Label15.AutoSize = True
-		Me.Label15.Location = New System.Drawing.Point(4, 52)
+		Me.Label15.Location = New System.Drawing.Point(10, 51)
 		Me.Label15.Name = "Label15"
-		Me.Label15.Size = New System.Drawing.Size(65, 13)
+		Me.Label15.Size = New System.Drawing.Size(75, 13)
 		Me.Label15.TabIndex = 12
-		Me.Label15.Text = "Valor Venda"
+		Me.Label15.Text = "Valor Venda: *"
 		'
 		'txtHonorario
 		'
-		Me.txtHonorario.Location = New System.Drawing.Point(255, 22)
+		Me.txtHonorario.Location = New System.Drawing.Point(287, 19)
 		Me.txtHonorario.Name = "txtHonorario"
 		Me.txtHonorario.Size = New System.Drawing.Size(100, 20)
 		Me.txtHonorario.TabIndex = 11
@@ -498,15 +498,15 @@ Partial Class FrmContratoVenda
 		'Label13
 		'
 		Me.Label13.AutoSize = True
-		Me.Label13.Location = New System.Drawing.Point(191, 26)
+		Me.Label13.Location = New System.Drawing.Point(211, 26)
 		Me.Label13.Name = "Label13"
-		Me.Label13.Size = New System.Drawing.Size(58, 13)
+		Me.Label13.Size = New System.Drawing.Size(68, 13)
 		Me.Label13.TabIndex = 10
-		Me.Label13.Text = "Honorarios"
+		Me.Label13.Text = "Honorarios: *"
 		'
 		'txtValorImovel
 		'
-		Me.txtValorImovel.Location = New System.Drawing.Point(79, 22)
+		Me.txtValorImovel.Location = New System.Drawing.Point(91, 22)
 		Me.txtValorImovel.Name = "txtValorImovel"
 		Me.txtValorImovel.Size = New System.Drawing.Size(100, 20)
 		Me.txtValorImovel.TabIndex = 9
@@ -514,11 +514,11 @@ Partial Class FrmContratoVenda
 		'Label12
 		'
 		Me.Label12.AutoSize = True
-		Me.Label12.Location = New System.Drawing.Point(4, 26)
+		Me.Label12.Location = New System.Drawing.Point(12, 27)
 		Me.Label12.Name = "Label12"
-		Me.Label12.Size = New System.Drawing.Size(65, 13)
+		Me.Label12.Size = New System.Drawing.Size(75, 13)
 		Me.Label12.TabIndex = 8
-		Me.Label12.Text = "Valor Imovel"
+		Me.Label12.Text = "Valor Imovel: *"
 		'
 		'GroupBox2
 		'
@@ -551,7 +551,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtCPF2
 		'
-		Me.txtCPF2.Location = New System.Drawing.Point(314, 98)
+		Me.txtCPF2.Location = New System.Drawing.Point(354, 100)
 		Me.txtCPF2.Name = "txtCPF2"
 		Me.txtCPF2.Size = New System.Drawing.Size(100, 20)
 		Me.txtCPF2.TabIndex = 53
@@ -559,15 +559,15 @@ Partial Class FrmContratoVenda
 		'Label21
 		'
 		Me.Label21.AutoSize = True
-		Me.Label21.Location = New System.Drawing.Point(272, 99)
+		Me.Label21.Location = New System.Drawing.Point(296, 100)
 		Me.Label21.Name = "Label21"
-		Me.Label21.Size = New System.Drawing.Size(36, 13)
+		Me.Label21.Size = New System.Drawing.Size(46, 13)
 		Me.Label21.TabIndex = 52
-		Me.Label21.Text = "CPF 2"
+		Me.Label21.Text = "CPF 2: *"
 		'
 		'txtTestemunha2
 		'
-		Me.txtTestemunha2.Location = New System.Drawing.Point(314, 72)
+		Me.txtTestemunha2.Location = New System.Drawing.Point(354, 74)
 		Me.txtTestemunha2.Name = "txtTestemunha2"
 		Me.txtTestemunha2.Size = New System.Drawing.Size(100, 20)
 		Me.txtTestemunha2.TabIndex = 51
@@ -575,15 +575,15 @@ Partial Class FrmContratoVenda
 		'Label25
 		'
 		Me.Label25.AutoSize = True
-		Me.Label25.Location = New System.Drawing.Point(239, 76)
+		Me.Label25.Location = New System.Drawing.Point(263, 77)
 		Me.Label25.Name = "Label25"
-		Me.Label25.Size = New System.Drawing.Size(75, 13)
+		Me.Label25.Size = New System.Drawing.Size(85, 13)
 		Me.Label25.TabIndex = 50
-		Me.Label25.Text = "Testemunha 2"
+		Me.Label25.Text = "Testemunha 2: *"
 		'
 		'txtCPF1
 		'
-		Me.txtCPF1.Location = New System.Drawing.Point(314, 43)
+		Me.txtCPF1.Location = New System.Drawing.Point(354, 45)
 		Me.txtCPF1.Name = "txtCPF1"
 		Me.txtCPF1.Size = New System.Drawing.Size(100, 20)
 		Me.txtCPF1.TabIndex = 49
@@ -591,15 +591,15 @@ Partial Class FrmContratoVenda
 		'Label18
 		'
 		Me.Label18.AutoSize = True
-		Me.Label18.Location = New System.Drawing.Point(277, 46)
+		Me.Label18.Location = New System.Drawing.Point(301, 47)
 		Me.Label18.Name = "Label18"
-		Me.Label18.Size = New System.Drawing.Size(36, 13)
+		Me.Label18.Size = New System.Drawing.Size(46, 13)
 		Me.Label18.TabIndex = 48
-		Me.Label18.Text = "CPF 1"
+		Me.Label18.Text = "CPF 1: *"
 		'
 		'txtTestemunha1
 		'
-		Me.txtTestemunha1.Location = New System.Drawing.Point(314, 17)
+		Me.txtTestemunha1.Location = New System.Drawing.Point(354, 19)
 		Me.txtTestemunha1.Name = "txtTestemunha1"
 		Me.txtTestemunha1.Size = New System.Drawing.Size(100, 20)
 		Me.txtTestemunha1.TabIndex = 47
@@ -607,15 +607,15 @@ Partial Class FrmContratoVenda
 		'Label20
 		'
 		Me.Label20.AutoSize = True
-		Me.Label20.Location = New System.Drawing.Point(239, 21)
+		Me.Label20.Location = New System.Drawing.Point(263, 22)
 		Me.Label20.Name = "Label20"
-		Me.Label20.Size = New System.Drawing.Size(75, 13)
+		Me.Label20.Size = New System.Drawing.Size(85, 13)
 		Me.Label20.TabIndex = 46
-		Me.Label20.Text = "Testemunha 1"
+		Me.Label20.Text = "Testemunha 1: *"
 		'
 		'btnCaptador2
 		'
-		Me.btnCaptador2.Location = New System.Drawing.Point(158, 92)
+		Me.btnCaptador2.Location = New System.Drawing.Point(182, 96)
 		Me.btnCaptador2.Name = "btnCaptador2"
 		Me.btnCaptador2.Size = New System.Drawing.Size(75, 23)
 		Me.btnCaptador2.TabIndex = 45
@@ -624,7 +624,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtCaptador2
 		'
-		Me.txtCaptador2.Location = New System.Drawing.Point(52, 96)
+		Me.txtCaptador2.Location = New System.Drawing.Point(76, 100)
 		Me.txtCaptador2.Name = "txtCaptador2"
 		Me.txtCaptador2.ReadOnly = True
 		Me.txtCaptador2.Size = New System.Drawing.Size(96, 20)
@@ -635,13 +635,13 @@ Partial Class FrmContratoVenda
 		Me.Label7.AutoSize = True
 		Me.Label7.Location = New System.Drawing.Point(3, 101)
 		Me.Label7.Name = "Label7"
-		Me.Label7.Size = New System.Drawing.Size(50, 13)
+		Me.Label7.Size = New System.Drawing.Size(69, 13)
 		Me.Label7.TabIndex = 43
-		Me.Label7.Text = "Captador"
+		Me.Label7.Text = "Captador 2: *"
 		'
 		'btnCaptador1
 		'
-		Me.btnCaptador1.Location = New System.Drawing.Point(158, 67)
+		Me.btnCaptador1.Location = New System.Drawing.Point(182, 71)
 		Me.btnCaptador1.Name = "btnCaptador1"
 		Me.btnCaptador1.Size = New System.Drawing.Size(75, 23)
 		Me.btnCaptador1.TabIndex = 42
@@ -650,7 +650,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtCaptador1
 		'
-		Me.txtCaptador1.Location = New System.Drawing.Point(52, 70)
+		Me.txtCaptador1.Location = New System.Drawing.Point(76, 74)
 		Me.txtCaptador1.Name = "txtCaptador1"
 		Me.txtCaptador1.ReadOnly = True
 		Me.txtCaptador1.Size = New System.Drawing.Size(96, 20)
@@ -661,13 +661,13 @@ Partial Class FrmContratoVenda
 		Me.Label8.AutoSize = True
 		Me.Label8.Location = New System.Drawing.Point(3, 76)
 		Me.Label8.Name = "Label8"
-		Me.Label8.Size = New System.Drawing.Size(50, 13)
+		Me.Label8.Size = New System.Drawing.Size(69, 13)
 		Me.Label8.TabIndex = 40
-		Me.Label8.Text = "Captador"
+		Me.Label8.Text = "Captador 1: *"
 		'
 		'btnPesquisar2
 		'
-		Me.btnPesquisar2.Location = New System.Drawing.Point(158, 41)
+		Me.btnPesquisar2.Location = New System.Drawing.Point(182, 45)
 		Me.btnPesquisar2.Name = "btnPesquisar2"
 		Me.btnPesquisar2.Size = New System.Drawing.Size(75, 23)
 		Me.btnPesquisar2.TabIndex = 39
@@ -676,7 +676,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtFiador2
 		'
-		Me.txtFiador2.Location = New System.Drawing.Point(48, 43)
+		Me.txtFiador2.Location = New System.Drawing.Point(72, 47)
 		Me.txtFiador2.Name = "txtFiador2"
 		Me.txtFiador2.ReadOnly = True
 		Me.txtFiador2.Size = New System.Drawing.Size(100, 20)
@@ -685,15 +685,15 @@ Partial Class FrmContratoVenda
 		'Label11
 		'
 		Me.Label11.AutoSize = True
-		Me.Label11.Location = New System.Drawing.Point(3, 50)
+		Me.Label11.Location = New System.Drawing.Point(17, 50)
 		Me.Label11.Name = "Label11"
-		Me.Label11.Size = New System.Drawing.Size(36, 13)
+		Me.Label11.Size = New System.Drawing.Size(55, 13)
 		Me.Label11.TabIndex = 37
-		Me.Label11.Text = "Fiador"
+		Me.Label11.Text = "Fiador 2: *"
 		'
 		'btnPesquisar1
 		'
-		Me.btnPesquisar1.Location = New System.Drawing.Point(158, 16)
+		Me.btnPesquisar1.Location = New System.Drawing.Point(182, 20)
 		Me.btnPesquisar1.Name = "btnPesquisar1"
 		Me.btnPesquisar1.Size = New System.Drawing.Size(75, 23)
 		Me.btnPesquisar1.TabIndex = 36
@@ -702,7 +702,7 @@ Partial Class FrmContratoVenda
 		'
 		'txtFiador1
 		'
-		Me.txtFiador1.Location = New System.Drawing.Point(48, 18)
+		Me.txtFiador1.Location = New System.Drawing.Point(72, 22)
 		Me.txtFiador1.Name = "txtFiador1"
 		Me.txtFiador1.ReadOnly = True
 		Me.txtFiador1.Size = New System.Drawing.Size(100, 20)
@@ -711,11 +711,11 @@ Partial Class FrmContratoVenda
 		'Label10
 		'
 		Me.Label10.AutoSize = True
-		Me.Label10.Location = New System.Drawing.Point(3, 25)
+		Me.Label10.Location = New System.Drawing.Point(17, 25)
 		Me.Label10.Name = "Label10"
-		Me.Label10.Size = New System.Drawing.Size(36, 13)
+		Me.Label10.Size = New System.Drawing.Size(55, 13)
 		Me.Label10.TabIndex = 10
-		Me.Label10.Text = "Fiador"
+		Me.Label10.Text = "Fiador 1: *"
 		'
 		'GroupBox1
 		'
@@ -725,16 +725,16 @@ Partial Class FrmContratoVenda
 		Me.GroupBox1.Controls.Add(Me.dtpDataContrato)
 		Me.GroupBox1.Controls.Add(Me.Label6)
 		Me.GroupBox1.Controls.Add(Me.Label5)
-		Me.GroupBox1.Location = New System.Drawing.Point(12, 32)
+		Me.GroupBox1.Location = New System.Drawing.Point(9, 38)
 		Me.GroupBox1.Name = "GroupBox1"
-		Me.GroupBox1.Size = New System.Drawing.Size(261, 83)
+		Me.GroupBox1.Size = New System.Drawing.Size(254, 83)
 		Me.GroupBox1.TabIndex = 24
 		Me.GroupBox1.TabStop = False
 		Me.GroupBox1.Text = "Datas"
 		'
 		'txtVencimentoParcela
 		'
-		Me.txtVencimentoParcela.Location = New System.Drawing.Point(129, 34)
+		Me.txtVencimentoParcela.Location = New System.Drawing.Point(151, 34)
 		Me.txtVencimentoParcela.Name = "txtVencimentoParcela"
 		Me.txtVencimentoParcela.Size = New System.Drawing.Size(100, 20)
 		Me.txtVencimentoParcela.TabIndex = 40
@@ -742,16 +742,16 @@ Partial Class FrmContratoVenda
 		'Label3
 		'
 		Me.Label3.AutoSize = True
-		Me.Label3.Location = New System.Drawing.Point(6, 16)
+		Me.Label3.Location = New System.Drawing.Point(43, 16)
 		Me.Label3.Name = "Label3"
-		Me.Label3.Size = New System.Drawing.Size(87, 13)
+		Me.Label3.Size = New System.Drawing.Size(97, 13)
 		Me.Label3.TabIndex = 4
-		Me.Label3.Text = "Data do contrato"
+		Me.Label3.Text = "Data do contrato: *"
 		'
 		'dtpInicioCobranca
 		'
 		Me.dtpInicioCobranca.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-		Me.dtpInicioCobranca.Location = New System.Drawing.Point(129, 60)
+		Me.dtpInicioCobranca.Location = New System.Drawing.Point(151, 60)
 		Me.dtpInicioCobranca.Name = "dtpInicioCobranca"
 		Me.dtpInicioCobranca.Size = New System.Drawing.Size(100, 20)
 		Me.dtpInicioCobranca.TabIndex = 11
@@ -759,7 +759,7 @@ Partial Class FrmContratoVenda
 		'dtpDataContrato
 		'
 		Me.dtpDataContrato.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-		Me.dtpDataContrato.Location = New System.Drawing.Point(129, 10)
+		Me.dtpDataContrato.Location = New System.Drawing.Point(151, 10)
 		Me.dtpDataContrato.Name = "dtpDataContrato"
 		Me.dtpDataContrato.Size = New System.Drawing.Size(100, 20)
 		Me.dtpDataContrato.TabIndex = 5
@@ -767,20 +767,20 @@ Partial Class FrmContratoVenda
 		'Label6
 		'
 		Me.Label6.AutoSize = True
-		Me.Label6.Location = New System.Drawing.Point(9, 66)
+		Me.Label6.Location = New System.Drawing.Point(35, 66)
 		Me.Label6.Name = "Label6"
-		Me.Label6.Size = New System.Drawing.Size(95, 13)
+		Me.Label6.Size = New System.Drawing.Size(105, 13)
 		Me.Label6.TabIndex = 10
-		Me.Label6.Text = "Inicio de cobrança"
+		Me.Label6.Text = "Inicio de cobrança: *"
 		'
 		'Label5
 		'
 		Me.Label5.AutoSize = True
 		Me.Label5.Location = New System.Drawing.Point(9, 40)
 		Me.Label5.Name = "Label5"
-		Me.Label5.Size = New System.Drawing.Size(121, 13)
+		Me.Label5.Size = New System.Drawing.Size(131, 13)
 		Me.Label5.TabIndex = 8
-		Me.Label5.Text = "Vencimento de parcelas"
+		Me.Label5.Text = "Vencimento de parcelas: *"
 		'
 		'txtNumContrato
 		'
@@ -795,9 +795,9 @@ Partial Class FrmContratoVenda
 		Me.Label1.AutoSize = True
 		Me.Label1.Location = New System.Drawing.Point(9, 13)
 		Me.Label1.Name = "Label1"
-		Me.Label1.Size = New System.Drawing.Size(101, 13)
+		Me.Label1.Size = New System.Drawing.Size(104, 13)
 		Me.Label1.TabIndex = 22
-		Me.Label1.Text = "Número do contrato"
+		Me.Label1.Text = "Número do contrato:"
 		'
 		'FrmContratoVenda
 		'

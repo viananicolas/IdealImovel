@@ -4,7 +4,7 @@ Partial Public Class Cliente
 	Public Shared Sub InserirCliente(ByVal oCliente As Cliente)
 
 		Dim ocn As New SqlConnection
-		ocn = Conexao.ConexaoSQL
+		ocn = Conexao.ConexaoSQL 'recebe conexão aberta com o banco de dados
 		Dim SQL As String
 		SQL = "INSERT INTO Cliente
            ([Nome]
@@ -49,11 +49,13 @@ Partial Public Class Cliente
            ,@Estado
 			,@DataNascimento)"
 
+
 		Dim oComando As New SqlCommand(SQL, ocn)
+		'substitui os parametros na string SQL com os valores do objeto
 		oComando.Parameters.AddWithValue("@Nome", oCliente.Nome)
 
 		'Verifica se o atributo é nulo, pois não é de preenchimento obrigatório. 
-		'Se for, insere um valor nulo do formato do Banco de dados
+		'Se for, insere um valor DBNull
 		If oCliente.cpf = Nothing Then
 			oComando.Parameters.AddWithValue("@CPF", DBNull.Value)
 		Else
@@ -93,8 +95,8 @@ Partial Public Class Cliente
 		oComando.Parameters.AddWithValue("@Profissao", oCliente.profissao)
 		oComando.Parameters.AddWithValue("@Estado", oCliente.Estado)
 		oComando.Parameters.AddWithValue("@DataNascimento", oCliente.datanascimento)
-		oComando.ExecuteNonQuery()
-		ocn.Close()
+		oComando.ExecuteNonQuery() 'executa a string
+		ocn.Close()	'fecha a conexão
 		ocn.Dispose()
 
 	End Sub
@@ -188,7 +190,7 @@ Partial Public Class Cliente
 			Dim oCliente As New Cliente
 			oCliente.Id_cliente = oDr.GetInt32(oDr.GetOrdinal("id_cliente"))
 			oCliente.Nome = oDr.GetString(oDr.GetOrdinal("Nome"))
-			oCliente.cpf = oDr.GetStringOrNull(oDr.GetOrdinal("CPF"))
+			oCliente.cpf = oDr.GetStringOrNull(oDr.GetOrdinal("CPF")) 'clique uma vez em cima de GetStringOrNull e aperte F12 para uma explicação mais detalhada
 			oCliente.tipopessoa = oDr.GetString(oDr.GetOrdinal("Tipo_Pessoa"))
 			oCliente.tipo = oDr.GetStringOrNull(oDr.GetOrdinal("Tipo"))
 			oCliente.razaosocial = oDr.GetStringOrNull(oDr.GetOrdinal("Razao_social"))
@@ -226,7 +228,7 @@ Partial Public Class Cliente
 		If oDr.Read Then
 			oDr.Close()
 			ocn.Close()
-			Return True
+			Return True	'se um cpf igual for encontrado, retorna true
 		End If
 		oDr.Close()
 		ocn.Close()

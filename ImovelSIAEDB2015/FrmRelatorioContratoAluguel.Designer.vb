@@ -50,7 +50,7 @@ Partial Class FrmRelatorioContratoAluguel
 		ReportDataSource1.Name = "DataSet1"
 		ReportDataSource1.Value = Me.ContratoAluguelBindingSource
 		Me.ReportViewer1.LocalReport.DataSources.Add(ReportDataSource1)
-		Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "ImovelSIAEDB2015.RptContratoAluguel.rdlc"
+		Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "ImovelSIAEDB2015.View.RptContratoAluguel.rdlc"
 		Me.ReportViewer1.Location = New System.Drawing.Point(-1, 2)
 		Me.ReportViewer1.Name = "ReportViewer1"
 		Me.ReportViewer1.Size = New System.Drawing.Size(839, 420)

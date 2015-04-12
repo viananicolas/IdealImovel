@@ -4,7 +4,7 @@ Imports ImovelSIAEDB2015.Model
 Public Class FrmListaCliente
 	Dim oCliente As Cliente
 	Dim templist As New List(Of Cliente)
-	Dim teste As Boolean = False
+	Dim Procura As Boolean = False
 	Dim Janela As String
 
 	Public Sub CarregarGrid()
@@ -13,7 +13,7 @@ Public Class FrmListaCliente
 		dtgCliente.Refresh()
 	End Sub
 	Private Sub FrmListaCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-		If teste Then
+		If Procura Then
 			CarregarGrid()
 		End If
 	End Sub
@@ -29,7 +29,7 @@ Public Class FrmListaCliente
 	End Sub
 
 	Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
-		Edicao.Editar(oCliente)
+		Edicao.Editar(oCliente)	'abre o formulário de cadastro de clientes
 	End Sub
 
 	Private Sub btnExcluir_Click(sender As Object, e As EventArgs) Handles btnExcluir.Click
@@ -52,7 +52,7 @@ Public Class FrmListaCliente
 		CarregarGrid()
 		Janela = Window
 		Dim a As Cliente
-		If IsToCadastrarImovel Then
+		If IsToCadastrarImovel Then	'Se a função foi invocada pelo Cadastrar Imóvel
 			If Item <> "" And Criterio = "Tipo" Then
 				dtgCliente.ClearSelection()
 				For index = 0 To dtgCliente.Rows.Count - 1
@@ -61,9 +61,10 @@ Public Class FrmListaCliente
 						templist.Add(a)
 					End If
 				Next
+				CarregaGridBusca()
 				If templist.Count = 0 Then
 					MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-
+					CarregarGrid()
 				End If
 
 			End If
@@ -77,9 +78,10 @@ Public Class FrmListaCliente
 						templist.Add(a)
 					End If
 				Next
+				CarregaGridBusca()
 				If templist.Count = 0 Then
 					MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-
+					CarregarGrid()
 				End If
 
 			End If
@@ -88,13 +90,14 @@ Public Class FrmListaCliente
 			dtgCliente.ClearSelection()
 			For index = 0 To dtgCliente.Rows.Count - 1
 				a = dtgCliente.Rows(index).DataBoundItem
-				If a.tipo = txtPesquisar.Text Then
+				If a.tipo = txtPesquisar.Text Then 'Faz a busca de acordo com os critérios definidos
 					templist.Add(a)
 				End If
 			Next
+			CarregaGridBusca()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-
+				CarregarGrid()
 			End If
 
 		ElseIf txtPesquisar.Text <> "" And Criterio = "Nome" Then
@@ -105,9 +108,10 @@ Public Class FrmListaCliente
 					templist.Add(a)
 				End If
 			Next
+			CarregaGridBusca()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-
+				CarregarGrid()
 			End If
 
 		ElseIf txtPesquisar.Text <> "" And Criterio = "Razão Social" Then
@@ -118,9 +122,10 @@ Public Class FrmListaCliente
 					templist.Add(a)
 				End If
 			Next
+			CarregaGridBusca()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-
+				CarregarGrid()
 			End If
 		ElseIf txtPesquisar.Text <> "" And Criterio = "CPF" Then
 			dtgCliente.ClearSelection()
@@ -130,9 +135,10 @@ Public Class FrmListaCliente
 					templist.Add(a)
 				End If
 			Next
+			CarregaGridBusca()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-
+				CarregarGrid()
 			End If
 		ElseIf txtPesquisar.Text <> "" And Criterio = "CNPJ" Then
 			dtgCliente.ClearSelection()
@@ -142,8 +148,10 @@ Public Class FrmListaCliente
 					templist.Add(a)
 				End If
 			Next
+			CarregaGridBusca()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+				CarregarGrid()
 			End If
 		ElseIf txtPesquisar.Text <> "" And Criterio = "Cidade" Then
 			dtgCliente.ClearSelection()
@@ -153,26 +161,27 @@ Public Class FrmListaCliente
 					templist.Add(a)
 				End If
 			Next
+			CarregaGridBusca()
 			If templist.Count = 0 Then
 				MessageBox.Show("Nenhum item encontrado", "Aviso de pesquisa", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+				CarregarGrid()
 			End If
 		End If
-		CarregaGridBusca()
 	End Sub
 	Public Function Modo() As Boolean
-		teste = True
-		Return teste
+		Procura = True
+		Return Procura
 	End Function
 	Public Sub SelecionarCliente(ByVal Window As String)
-		If teste Then
+		If Procura Then	'Se o formulário foi aberto de um outro formulário de cadastro
 			If dtgCliente.SelectedRows.Count > 0 Then
-				oCliente = dtgCliente.SelectedRows(0).DataBoundItem
+				oCliente = dtgCliente.SelectedRows(0).DataBoundItem	'salva a linha selecionada do grid como um objeto do tipo Cliente
 			End If
 		End If
 		Dim ProprietarioSelecionado As New Tuple(Of Integer, String)(oCliente.Id_cliente, oCliente.Nome)
 		Edicao.achou = True
-		Edicao.Proprietario(ProprietarioSelecionado, Window)
-		Me.Close()
+		Edicao.Proprietario(ProprietarioSelecionado, Window) 'envia o objeto selecionado e de que formulário foi aberto
+		Me.Close() 'fecha o form
 	End Sub
 	Public Sub CarregaGridBusca()
 		dtgCliente.DataSource = templist

@@ -125,7 +125,7 @@ Partial Class FrmListaContratosAluguel
 		'
 		Me.cmbTipoPesquisa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 		Me.cmbTipoPesquisa.FormattingEnabled = True
-		Me.cmbTipoPesquisa.Items.AddRange(New Object() {"Proprietário", "Tipo", "Situação"})
+		Me.cmbTipoPesquisa.Items.AddRange(New Object() {"ID", "Proprietário", "Tipo", "Situação"})
 		Me.cmbTipoPesquisa.Location = New System.Drawing.Point(556, 44)
 		Me.cmbTipoPesquisa.Name = "cmbTipoPesquisa"
 		Me.cmbTipoPesquisa.Size = New System.Drawing.Size(121, 21)
