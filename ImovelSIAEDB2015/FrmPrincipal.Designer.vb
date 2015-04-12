@@ -45,13 +45,15 @@ Partial Class FrmPrincipal
 		Me.lblUserLogado = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.lblMaquina = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.lblOS = New System.Windows.Forms.ToolStripStatusLabel()
+		Me.ArquivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.MenuStrip1.SuspendLayout()
 		Me.StatusStrip1.SuspendLayout()
 		Me.SuspendLayout()
 		'
 		'MenuStrip1
 		'
-		Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CadastroToolStripMenuItem, Me.ContratoToolStripMenuItem, Me.ListarToolStripMenuItem, Me.RelatórioToolStripMenuItem, Me.SobreToolStripMenuItem})
+		Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArquivoToolStripMenuItem, Me.CadastroToolStripMenuItem, Me.ContratoToolStripMenuItem, Me.ListarToolStripMenuItem, Me.RelatórioToolStripMenuItem, Me.SobreToolStripMenuItem})
 		Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
 		Me.MenuStrip1.Name = "MenuStrip1"
 		Me.MenuStrip1.Size = New System.Drawing.Size(897, 24)
@@ -112,32 +114,32 @@ Partial Class FrmPrincipal
 		'ClientesToolStripMenuItem
 		'
 		Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-		Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+		Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
 		Me.ClientesToolStripMenuItem.Text = "Clientes"
 		'
 		'ImóveisToolStripMenuItem
 		'
 		Me.ImóveisToolStripMenuItem.Name = "ImóveisToolStripMenuItem"
-		Me.ImóveisToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+		Me.ImóveisToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
 		Me.ImóveisToolStripMenuItem.Text = "Imóveis"
 		'
 		'ContratosDeAluguelToolStripMenuItem
 		'
 		Me.ContratosDeAluguelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AluguelToolStripMenuItem, Me.VendaToolStripMenuItem})
 		Me.ContratosDeAluguelToolStripMenuItem.Name = "ContratosDeAluguelToolStripMenuItem"
-		Me.ContratosDeAluguelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+		Me.ContratosDeAluguelToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
 		Me.ContratosDeAluguelToolStripMenuItem.Text = "Contratos"
 		'
 		'AluguelToolStripMenuItem
 		'
 		Me.AluguelToolStripMenuItem.Name = "AluguelToolStripMenuItem"
-		Me.AluguelToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+		Me.AluguelToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
 		Me.AluguelToolStripMenuItem.Text = "Aluguel"
 		'
 		'VendaToolStripMenuItem
 		'
 		Me.VendaToolStripMenuItem.Name = "VendaToolStripMenuItem"
-		Me.VendaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+		Me.VendaToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
 		Me.VendaToolStripMenuItem.Text = "Venda"
 		'
 		'RelatórioToolStripMenuItem
@@ -192,6 +194,19 @@ Partial Class FrmPrincipal
 		Me.lblOS.Size = New System.Drawing.Size(121, 17)
 		Me.lblOS.Text = "ToolStripStatusLabel1"
 		'
+		'ArquivoToolStripMenuItem
+		'
+		Me.ArquivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairToolStripMenuItem})
+		Me.ArquivoToolStripMenuItem.Name = "ArquivoToolStripMenuItem"
+		Me.ArquivoToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+		Me.ArquivoToolStripMenuItem.Text = "Arquivo"
+		'
+		'SairToolStripMenuItem
+		'
+		Me.SairToolStripMenuItem.Name = "SairToolStripMenuItem"
+		Me.SairToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+		Me.SairToolStripMenuItem.Text = "Sair"
+		'
 		'FrmPrincipal
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -237,4 +252,6 @@ Partial Class FrmPrincipal
 	Friend WithEvents SobreToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents AluguelToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents VendaToolStripMenuItem As ToolStripMenuItem
+	Friend WithEvents ArquivoToolStripMenuItem As ToolStripMenuItem
+	Friend WithEvents SairToolStripMenuItem As ToolStripMenuItem
 End Class

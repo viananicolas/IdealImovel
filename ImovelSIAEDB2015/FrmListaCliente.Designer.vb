@@ -62,10 +62,10 @@ Partial Class FrmListaCliente
 			Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
 		Me.dtgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
 		Me.dtgCliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_cliente, Me.Tipo, Me.DataNascimento, Me.Nome, Me.CPF, Me.Tipo_Pessoa, Me.Razao_social, Me.Telefone, Me.Celular, Me.CNPJ, Me.Email, Me.Endereco, Me.Cidade, Me.Bairro, Me.Estado, Me.Numero, Me.CEP, Me.Nacionalidade, Me.Naturalidade, Me.Estado_Civil, Me.Profissao})
-		Me.dtgCliente.Location = New System.Drawing.Point(13, 71)
+		Me.dtgCliente.Location = New System.Drawing.Point(12, 71)
 		Me.dtgCliente.Name = "dtgCliente"
 		Me.dtgCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-		Me.dtgCliente.Size = New System.Drawing.Size(770, 409)
+		Me.dtgCliente.Size = New System.Drawing.Size(1044, 409)
 		Me.dtgCliente.TabIndex = 0
 		'
 		'id_cliente
@@ -227,7 +227,7 @@ Partial Class FrmListaCliente
 		Me.cmbTipoPesquisa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 		Me.cmbTipoPesquisa.FormattingEnabled = True
 		Me.cmbTipoPesquisa.Items.AddRange(New Object() {"Nome", "Tipo", "CPF", "CNPJ", "Cidade", "Razão Social"})
-		Me.cmbTipoPesquisa.Location = New System.Drawing.Point(414, 37)
+		Me.cmbTipoPesquisa.Location = New System.Drawing.Point(771, 35)
 		Me.cmbTipoPesquisa.Name = "cmbTipoPesquisa"
 		Me.cmbTipoPesquisa.Size = New System.Drawing.Size(121, 21)
 		Me.cmbTipoPesquisa.TabIndex = 2
@@ -243,7 +243,7 @@ Partial Class FrmListaCliente
 		'
 		'btnEditar
 		'
-		Me.btnEditar.Location = New System.Drawing.Point(541, 35)
+		Me.btnEditar.Location = New System.Drawing.Point(898, 33)
 		Me.btnEditar.Name = "btnEditar"
 		Me.btnEditar.Size = New System.Drawing.Size(75, 23)
 		Me.btnEditar.TabIndex = 4
@@ -252,7 +252,7 @@ Partial Class FrmListaCliente
 		'
 		'btnExcluir
 		'
-		Me.btnExcluir.Location = New System.Drawing.Point(622, 35)
+		Me.btnExcluir.Location = New System.Drawing.Point(979, 33)
 		Me.btnExcluir.Name = "btnExcluir"
 		Me.btnExcluir.Size = New System.Drawing.Size(75, 23)
 		Me.btnExcluir.TabIndex = 5
@@ -263,7 +263,7 @@ Partial Class FrmListaCliente
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(795, 492)
+		Me.ClientSize = New System.Drawing.Size(1068, 492)
 		Me.Controls.Add(Me.btnExcluir)
 		Me.Controls.Add(Me.btnEditar)
 		Me.Controls.Add(Me.btnPesquisar)

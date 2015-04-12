@@ -15,6 +15,8 @@
 		frmlistacliente.Modo()
 		frmlistacliente.WindowState = FormWindowState.Maximized
 		frmlistacliente.Show()
+		MenuStrip1.Refresh()
+		Me.Refresh()
 	End Sub
 
 	Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -22,6 +24,9 @@
 		lblMaquina.Text = "Máquina: " + Environment.MachineName + " |"
 		lblOS.Text = "Sistema Operacional: " + Environment.OSVersion.VersionString + " |"
 		'ToolStripStatusLabel1.Text = Environment.Version.ToString
+
+		MenuStrip1.AutoSize = False
+
 	End Sub
 
 	Private Sub ImóvelToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImóvelToolStripMenuItem.Click
@@ -96,5 +101,9 @@
 		frmvenda.MdiParent = Me
 		frmvenda.WindowState = FormWindowState.Maximized
 		frmvenda.Show()
+	End Sub
+
+	Private Sub SairToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairToolStripMenuItem.Click
+		Me.Close()
 	End Sub
 End Class
