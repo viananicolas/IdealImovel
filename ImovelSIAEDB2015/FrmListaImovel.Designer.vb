@@ -24,34 +24,34 @@ Partial Class FrmListaImovel
 	Private Sub InitializeComponent()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmListaImovel))
 		Me.dtgImovel = New System.Windows.Forms.DataGridView()
-		Me.Foto = New System.Windows.Forms.DataGridViewImageColumn()
-		Me.id_imovel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Transacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Subtipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Cidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Bairro = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Endereco = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Numero = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Complemento = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Area_terreno = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Area_construida = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Corretor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Quartos = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.IPTU = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Preco = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Salas = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.id_cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Suite = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Garagem = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Banheiro = New System.Windows.Forms.DataGridViewTextBoxColumn()
-		Me.Andar = New System.Windows.Forms.DataGridViewTextBoxColumn()
 		Me.btnExcluir = New System.Windows.Forms.Button()
 		Me.btnEditar = New System.Windows.Forms.Button()
 		Me.btnPesquisar = New System.Windows.Forms.Button()
 		Me.cmbTipoPesquisa = New System.Windows.Forms.ComboBox()
 		Me.txtPesquisar = New System.Windows.Forms.TextBox()
+		Me.Andar = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Banheiro = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Garagem = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Suite = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.id_cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Salas = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Preco = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.IPTU = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Quartos = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Corretor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Area_construida = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Area_terreno = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Complemento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Numero = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Endereco = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Bairro = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Cidade = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Subtipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Tipo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Transacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.id_imovel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+		Me.Foto = New System.Windows.Forms.DataGridViewImageColumn()
 		CType(Me.dtgImovel, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
@@ -69,168 +69,6 @@ Partial Class FrmListaImovel
 		Me.dtgImovel.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
 		Me.dtgImovel.Size = New System.Drawing.Size(845, 442)
 		Me.dtgImovel.TabIndex = 0
-		'
-		'Foto
-		'
-		Me.Foto.DataPropertyName = "foto"
-		Me.Foto.HeaderText = "Foto"
-		Me.Foto.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
-		Me.Foto.Name = "Foto"
-		Me.Foto.ReadOnly = True
-		'
-		'id_imovel
-		'
-		Me.id_imovel.DataPropertyName = "id_imovel"
-		Me.id_imovel.HeaderText = "ID"
-		Me.id_imovel.Name = "id_imovel"
-		Me.id_imovel.ReadOnly = True
-		'
-		'Transacao
-		'
-		Me.Transacao.DataPropertyName = "Transacao"
-		Me.Transacao.HeaderText = "Transação"
-		Me.Transacao.Name = "Transacao"
-		Me.Transacao.ReadOnly = True
-		'
-		'Tipo
-		'
-		Me.Tipo.DataPropertyName = "Tipo"
-		Me.Tipo.HeaderText = "Tipo"
-		Me.Tipo.Name = "Tipo"
-		Me.Tipo.ReadOnly = True
-		'
-		'Subtipo
-		'
-		Me.Subtipo.DataPropertyName = "Subtipo"
-		Me.Subtipo.HeaderText = "Subtipo"
-		Me.Subtipo.Name = "Subtipo"
-		Me.Subtipo.ReadOnly = True
-		'
-		'Estado
-		'
-		Me.Estado.DataPropertyName = "Estado"
-		Me.Estado.HeaderText = "Estado"
-		Me.Estado.Name = "Estado"
-		Me.Estado.ReadOnly = True
-		'
-		'Cidade
-		'
-		Me.Cidade.DataPropertyName = "Cidade"
-		Me.Cidade.HeaderText = "Cidade"
-		Me.Cidade.Name = "Cidade"
-		Me.Cidade.ReadOnly = True
-		'
-		'Bairro
-		'
-		Me.Bairro.DataPropertyName = "Bairro"
-		Me.Bairro.HeaderText = "Bairro"
-		Me.Bairro.Name = "Bairro"
-		Me.Bairro.ReadOnly = True
-		'
-		'Endereco
-		'
-		Me.Endereco.DataPropertyName = "Endereco"
-		Me.Endereco.HeaderText = "Endereço"
-		Me.Endereco.Name = "Endereco"
-		Me.Endereco.ReadOnly = True
-		'
-		'Numero
-		'
-		Me.Numero.DataPropertyName = "Numero"
-		Me.Numero.HeaderText = "Número"
-		Me.Numero.Name = "Numero"
-		Me.Numero.ReadOnly = True
-		'
-		'Complemento
-		'
-		Me.Complemento.DataPropertyName = "Complemento"
-		Me.Complemento.HeaderText = "Complemento"
-		Me.Complemento.Name = "Complemento"
-		Me.Complemento.ReadOnly = True
-		'
-		'Area_terreno
-		'
-		Me.Area_terreno.DataPropertyName = "Areaterreno"
-		Me.Area_terreno.HeaderText = "Area Terreno"
-		Me.Area_terreno.Name = "Area_terreno"
-		Me.Area_terreno.ReadOnly = True
-		'
-		'Area_construida
-		'
-		Me.Area_construida.DataPropertyName = "Areaconstruida"
-		Me.Area_construida.HeaderText = "Area Construída"
-		Me.Area_construida.Name = "Area_construida"
-		Me.Area_construida.ReadOnly = True
-		'
-		'Corretor
-		'
-		Me.Corretor.DataPropertyName = "Corretor"
-		Me.Corretor.HeaderText = "Corretor"
-		Me.Corretor.Name = "Corretor"
-		Me.Corretor.ReadOnly = True
-		'
-		'Quartos
-		'
-		Me.Quartos.DataPropertyName = "Quartos"
-		Me.Quartos.HeaderText = "Quartos"
-		Me.Quartos.Name = "Quartos"
-		Me.Quartos.ReadOnly = True
-		'
-		'IPTU
-		'
-		Me.IPTU.DataPropertyName = "IPTU"
-		Me.IPTU.HeaderText = "IPTU"
-		Me.IPTU.Name = "IPTU"
-		Me.IPTU.ReadOnly = True
-		'
-		'Preco
-		'
-		Me.Preco.DataPropertyName = "Preco"
-		Me.Preco.HeaderText = "Preço"
-		Me.Preco.Name = "Preco"
-		Me.Preco.ReadOnly = True
-		'
-		'Salas
-		'
-		Me.Salas.DataPropertyName = "Salas"
-		Me.Salas.HeaderText = "Salas"
-		Me.Salas.Name = "Salas"
-		Me.Salas.ReadOnly = True
-		'
-		'id_cliente
-		'
-		Me.id_cliente.DataPropertyName = "id_cliente"
-		Me.id_cliente.HeaderText = "Proprietário"
-		Me.id_cliente.Name = "id_cliente"
-		Me.id_cliente.ReadOnly = True
-		'
-		'Suite
-		'
-		Me.Suite.DataPropertyName = "Suite"
-		Me.Suite.HeaderText = "Suíte"
-		Me.Suite.Name = "Suite"
-		Me.Suite.ReadOnly = True
-		'
-		'Garagem
-		'
-		Me.Garagem.DataPropertyName = "Garagem"
-		Me.Garagem.HeaderText = "Garagem"
-		Me.Garagem.Name = "Garagem"
-		Me.Garagem.ReadOnly = True
-		'
-		'Banheiro
-		'
-		Me.Banheiro.DataPropertyName = "Banheiro"
-		Me.Banheiro.HeaderText = "Banheiro"
-		Me.Banheiro.Name = "Banheiro"
-		Me.Banheiro.ReadOnly = True
-		'
-		'Andar
-		'
-		Me.Andar.DataPropertyName = "Andar"
-		Me.Andar.HeaderText = "Andar"
-		Me.Andar.Name = "Andar"
-		Me.Andar.ReadOnly = True
 		'
 		'btnExcluir
 		'
@@ -275,6 +113,168 @@ Partial Class FrmListaImovel
 		Me.txtPesquisar.Name = "txtPesquisar"
 		Me.txtPesquisar.Size = New System.Drawing.Size(474, 20)
 		Me.txtPesquisar.TabIndex = 6
+		'
+		'Andar
+		'
+		Me.Andar.DataPropertyName = "Andar"
+		Me.Andar.HeaderText = "Andar"
+		Me.Andar.Name = "Andar"
+		Me.Andar.ReadOnly = True
+		'
+		'Banheiro
+		'
+		Me.Banheiro.DataPropertyName = "Banheiro"
+		Me.Banheiro.HeaderText = "Banheiro"
+		Me.Banheiro.Name = "Banheiro"
+		Me.Banheiro.ReadOnly = True
+		'
+		'Garagem
+		'
+		Me.Garagem.DataPropertyName = "Garagem"
+		Me.Garagem.HeaderText = "Garagem"
+		Me.Garagem.Name = "Garagem"
+		Me.Garagem.ReadOnly = True
+		'
+		'Suite
+		'
+		Me.Suite.DataPropertyName = "Suite"
+		Me.Suite.HeaderText = "Suíte"
+		Me.Suite.Name = "Suite"
+		Me.Suite.ReadOnly = True
+		'
+		'id_cliente
+		'
+		Me.id_cliente.DataPropertyName = "id_cliente"
+		Me.id_cliente.HeaderText = "Proprietário"
+		Me.id_cliente.Name = "id_cliente"
+		Me.id_cliente.ReadOnly = True
+		'
+		'Salas
+		'
+		Me.Salas.DataPropertyName = "Salas"
+		Me.Salas.HeaderText = "Salas"
+		Me.Salas.Name = "Salas"
+		Me.Salas.ReadOnly = True
+		'
+		'Preco
+		'
+		Me.Preco.DataPropertyName = "Preco"
+		Me.Preco.HeaderText = "Preço"
+		Me.Preco.Name = "Preco"
+		Me.Preco.ReadOnly = True
+		'
+		'IPTU
+		'
+		Me.IPTU.DataPropertyName = "IPTU"
+		Me.IPTU.HeaderText = "IPTU"
+		Me.IPTU.Name = "IPTU"
+		Me.IPTU.ReadOnly = True
+		'
+		'Quartos
+		'
+		Me.Quartos.DataPropertyName = "Quartos"
+		Me.Quartos.HeaderText = "Quartos"
+		Me.Quartos.Name = "Quartos"
+		Me.Quartos.ReadOnly = True
+		'
+		'Corretor
+		'
+		Me.Corretor.DataPropertyName = "Corretor"
+		Me.Corretor.HeaderText = "Corretor"
+		Me.Corretor.Name = "Corretor"
+		Me.Corretor.ReadOnly = True
+		'
+		'Area_construida
+		'
+		Me.Area_construida.DataPropertyName = "Areaconstruida"
+		Me.Area_construida.HeaderText = "Area Construída"
+		Me.Area_construida.Name = "Area_construida"
+		Me.Area_construida.ReadOnly = True
+		'
+		'Area_terreno
+		'
+		Me.Area_terreno.DataPropertyName = "Areaterreno"
+		Me.Area_terreno.HeaderText = "Area Terreno"
+		Me.Area_terreno.Name = "Area_terreno"
+		Me.Area_terreno.ReadOnly = True
+		'
+		'Complemento
+		'
+		Me.Complemento.DataPropertyName = "Complemento"
+		Me.Complemento.HeaderText = "Complemento"
+		Me.Complemento.Name = "Complemento"
+		Me.Complemento.ReadOnly = True
+		'
+		'Numero
+		'
+		Me.Numero.DataPropertyName = "Numero"
+		Me.Numero.HeaderText = "Número"
+		Me.Numero.Name = "Numero"
+		Me.Numero.ReadOnly = True
+		'
+		'Endereco
+		'
+		Me.Endereco.DataPropertyName = "Endereco"
+		Me.Endereco.HeaderText = "Endereço"
+		Me.Endereco.Name = "Endereco"
+		Me.Endereco.ReadOnly = True
+		'
+		'Bairro
+		'
+		Me.Bairro.DataPropertyName = "Bairro"
+		Me.Bairro.HeaderText = "Bairro"
+		Me.Bairro.Name = "Bairro"
+		Me.Bairro.ReadOnly = True
+		'
+		'Cidade
+		'
+		Me.Cidade.DataPropertyName = "Cidade"
+		Me.Cidade.HeaderText = "Cidade"
+		Me.Cidade.Name = "Cidade"
+		Me.Cidade.ReadOnly = True
+		'
+		'Estado
+		'
+		Me.Estado.DataPropertyName = "Estado"
+		Me.Estado.HeaderText = "Estado"
+		Me.Estado.Name = "Estado"
+		Me.Estado.ReadOnly = True
+		'
+		'Subtipo
+		'
+		Me.Subtipo.DataPropertyName = "Subtipo"
+		Me.Subtipo.HeaderText = "Subtipo"
+		Me.Subtipo.Name = "Subtipo"
+		Me.Subtipo.ReadOnly = True
+		'
+		'Tipo
+		'
+		Me.Tipo.DataPropertyName = "Tipo"
+		Me.Tipo.HeaderText = "Tipo"
+		Me.Tipo.Name = "Tipo"
+		Me.Tipo.ReadOnly = True
+		'
+		'Transacao
+		'
+		Me.Transacao.DataPropertyName = "Transacao"
+		Me.Transacao.HeaderText = "Transação"
+		Me.Transacao.Name = "Transacao"
+		Me.Transacao.ReadOnly = True
+		'
+		'id_imovel
+		'
+		Me.id_imovel.DataPropertyName = "id_imovel"
+		Me.id_imovel.HeaderText = "ID"
+		Me.id_imovel.Name = "id_imovel"
+		Me.id_imovel.ReadOnly = True
+		'
+		'Foto
+		'
+		Me.Foto.DataPropertyName = "foto"
+		Me.Foto.HeaderText = "Foto"
+		Me.Foto.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
+		Me.Foto.Name = "Foto"
+		Me.Foto.ReadOnly = True
 		'
 		'FrmListaImovel
 		'

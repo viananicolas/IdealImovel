@@ -24,6 +24,8 @@ Partial Class FrmPrincipal
 	Private Sub InitializeComponent()
 		Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrincipal))
 		Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+		Me.ArquivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.CadastroToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ImóvelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,8 +47,6 @@ Partial Class FrmPrincipal
 		Me.lblUserLogado = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.lblMaquina = New System.Windows.Forms.ToolStripStatusLabel()
 		Me.lblOS = New System.Windows.Forms.ToolStripStatusLabel()
-		Me.ArquivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.MenuStrip1.SuspendLayout()
 		Me.StatusStrip1.SuspendLayout()
 		Me.SuspendLayout()
@@ -59,6 +59,19 @@ Partial Class FrmPrincipal
 		Me.MenuStrip1.Size = New System.Drawing.Size(897, 24)
 		Me.MenuStrip1.TabIndex = 0
 		Me.MenuStrip1.Text = "MenuStrip1"
+		'
+		'ArquivoToolStripMenuItem
+		'
+		Me.ArquivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairToolStripMenuItem})
+		Me.ArquivoToolStripMenuItem.Name = "ArquivoToolStripMenuItem"
+		Me.ArquivoToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+		Me.ArquivoToolStripMenuItem.Text = "Arquivo"
+		'
+		'SairToolStripMenuItem
+		'
+		Me.SairToolStripMenuItem.Name = "SairToolStripMenuItem"
+		Me.SairToolStripMenuItem.Size = New System.Drawing.Size(93, 22)
+		Me.SairToolStripMenuItem.Text = "Sair"
 		'
 		'CadastroToolStripMenuItem
 		'
@@ -194,26 +207,16 @@ Partial Class FrmPrincipal
 		Me.lblOS.Size = New System.Drawing.Size(121, 17)
 		Me.lblOS.Text = "ToolStripStatusLabel1"
 		'
-		'ArquivoToolStripMenuItem
-		'
-		Me.ArquivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairToolStripMenuItem})
-		Me.ArquivoToolStripMenuItem.Name = "ArquivoToolStripMenuItem"
-		Me.ArquivoToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
-		Me.ArquivoToolStripMenuItem.Text = "Arquivo"
-		'
-		'SairToolStripMenuItem
-		'
-		Me.SairToolStripMenuItem.Name = "SairToolStripMenuItem"
-		Me.SairToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-		Me.SairToolStripMenuItem.Text = "Sair"
-		'
 		'FrmPrincipal
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.BackgroundImage = Global.ImovelSIAEDB2015.View.My.Resources.Resources._999398953
+		Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
 		Me.ClientSize = New System.Drawing.Size(897, 501)
 		Me.Controls.Add(Me.StatusStrip1)
 		Me.Controls.Add(Me.MenuStrip1)
+		Me.DoubleBuffered = True
 		Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
 		Me.IsMdiContainer = True
 		Me.MainMenuStrip = Me.MenuStrip1

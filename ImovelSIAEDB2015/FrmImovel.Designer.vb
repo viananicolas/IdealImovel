@@ -331,7 +331,7 @@ Partial Class FrmImovel
 		'Label15
 		'
 		Me.Label15.AutoSize = True
-		Me.Label15.Location = New System.Drawing.Point(405, 30)
+		Me.Label15.Location = New System.Drawing.Point(428, 30)
 		Me.Label15.Name = "Label15"
 		Me.Label15.Size = New System.Drawing.Size(43, 13)
 		Me.Label15.TabIndex = 30
@@ -339,7 +339,7 @@ Partial Class FrmImovel
 		'
 		'txtSalas
 		'
-		Me.txtSalas.Location = New System.Drawing.Point(454, 26)
+		Me.txtSalas.Location = New System.Drawing.Point(477, 26)
 		Me.txtSalas.Name = "txtSalas"
 		Me.txtSalas.Size = New System.Drawing.Size(31, 20)
 		Me.txtSalas.TabIndex = 29
@@ -389,13 +389,13 @@ Partial Class FrmImovel
 		'
 		Me.txtAreaTerreno.Location = New System.Drawing.Point(317, 53)
 		Me.txtAreaTerreno.Name = "txtAreaTerreno"
-		Me.txtAreaTerreno.Size = New System.Drawing.Size(31, 20)
+		Me.txtAreaTerreno.Size = New System.Drawing.Size(47, 20)
 		Me.txtAreaTerreno.TabIndex = 35
 		'
 		'Label19
 		'
 		Me.Label19.AutoSize = True
-		Me.Label19.Location = New System.Drawing.Point(359, 56)
+		Me.Label19.Location = New System.Drawing.Point(382, 55)
 		Me.Label19.Name = "Label19"
 		Me.Label19.Size = New System.Drawing.Size(93, 13)
 		Me.Label19.TabIndex = 38
@@ -403,9 +403,9 @@ Partial Class FrmImovel
 		'
 		'txtAreaConstruida
 		'
-		Me.txtAreaConstruida.Location = New System.Drawing.Point(454, 53)
+		Me.txtAreaConstruida.Location = New System.Drawing.Point(477, 52)
 		Me.txtAreaConstruida.Name = "txtAreaConstruida"
-		Me.txtAreaConstruida.Size = New System.Drawing.Size(31, 20)
+		Me.txtAreaConstruida.Size = New System.Drawing.Size(33, 20)
 		Me.txtAreaConstruida.TabIndex = 37
 		'
 		'Label20
@@ -437,7 +437,7 @@ Partial Class FrmImovel
 		'Label23
 		'
 		Me.Label23.AutoSize = True
-		Me.Label23.Location = New System.Drawing.Point(493, 28)
+		Me.Label23.Location = New System.Drawing.Point(516, 28)
 		Me.Label23.Name = "Label23"
 		Me.Label23.Size = New System.Drawing.Size(74, 13)
 		Me.Label23.TabIndex = 40
@@ -445,7 +445,7 @@ Partial Class FrmImovel
 		'
 		'txtCondominio
 		'
-		Me.txtCondominio.Location = New System.Drawing.Point(573, 25)
+		Me.txtCondominio.Location = New System.Drawing.Point(596, 25)
 		Me.txtCondominio.Name = "txtCondominio"
 		Me.txtCondominio.Size = New System.Drawing.Size(31, 20)
 		Me.txtCondominio.TabIndex = 39
@@ -514,7 +514,7 @@ Partial Class FrmImovel
 		'
 		'btnSalvar
 		'
-		Me.btnSalvar.Location = New System.Drawing.Point(12, 648)
+		Me.btnSalvar.Location = New System.Drawing.Point(207, 231)
 		Me.btnSalvar.Name = "btnSalvar"
 		Me.btnSalvar.Size = New System.Drawing.Size(75, 23)
 		Me.btnSalvar.TabIndex = 54
@@ -523,7 +523,7 @@ Partial Class FrmImovel
 		'
 		'btnLimpar
 		'
-		Me.btnLimpar.Location = New System.Drawing.Point(93, 648)
+		Me.btnLimpar.Location = New System.Drawing.Point(288, 231)
 		Me.btnLimpar.Name = "btnLimpar"
 		Me.btnLimpar.Size = New System.Drawing.Size(75, 23)
 		Me.btnLimpar.TabIndex = 55
@@ -660,6 +660,8 @@ Partial Class FrmImovel
 		'
 		Me.GroupBox4.Controls.Add(Me.btnFoto)
 		Me.GroupBox4.Controls.Add(Me.pbCasa)
+		Me.GroupBox4.Controls.Add(Me.btnSalvar)
+		Me.GroupBox4.Controls.Add(Me.btnLimpar)
 		Me.GroupBox4.Location = New System.Drawing.Point(308, 145)
 		Me.GroupBox4.Name = "GroupBox4"
 		Me.GroupBox4.Size = New System.Drawing.Size(391, 260)
@@ -671,12 +673,10 @@ Partial Class FrmImovel
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(731, 683)
+		Me.ClientSize = New System.Drawing.Size(731, 650)
 		Me.Controls.Add(Me.GroupBox3)
 		Me.Controls.Add(Me.GroupBox2)
 		Me.Controls.Add(Me.GroupBox1)
-		Me.Controls.Add(Me.btnLimpar)
-		Me.Controls.Add(Me.btnSalvar)
 		Me.Controls.Add(Me.Label22)
 		Me.Controls.Add(Me.txtID)
 		Me.Controls.Add(Me.cmbSubtipo)

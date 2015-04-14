@@ -170,6 +170,7 @@ Partial Class Sobre
 		Me.ShowInTaskbar = False
 		Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
 		Me.Text = "Sobre"
+		Me.TopMost = True
 		Me.TableLayoutPanel.ResumeLayout(False)
 		Me.TableLayoutPanel.PerformLayout()
 		CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()

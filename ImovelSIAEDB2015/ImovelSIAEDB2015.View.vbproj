@@ -296,6 +296,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="home.ico" />
+    <None Include="Resources\999398953.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

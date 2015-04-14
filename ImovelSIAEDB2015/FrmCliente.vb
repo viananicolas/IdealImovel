@@ -202,8 +202,7 @@ Public Class FrmCliente
 	End Sub
 
 	Private Sub FrmCliente_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-		Dim form As New FrmListaCliente
-		form.CarregarGrid()
+
 	End Sub
 
 	Private Sub btnLimpar_Click(sender As Object, e As EventArgs) Handles btnLimpar.Click
